@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feyza vs zeynep</title>
+</head>
+<body style="background-color:black ;">
+    <style>
+        h1,h2,p{
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+        }
+        button{
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <h1>feyza 👧🏼</h1>
+    <p id="f">feyzanın puan: </p> 
+    <h2>Zeynep 👱🏻‍♀</h2>
+    <p id="z">zeynebin puanı: </p>
+    <script>
+        var feyza = 0
+        var zeynep = 0
+        function fey(){
+            feyza ++
+            document.getElementById("f").innerHTML = "feyzanın puanı: " + feyza
+        }
+        function zey(){
+            zeynep ++
+            document.getElementById("z").innerHTML = "zeynebin puanı: " + zeynep
+        }
+    </script>
+    <button onclick="zey()">Feyzaya vur</button>
+    <button onclick="fey()">Zeynebe vur</button>
+
+    
+</body>
